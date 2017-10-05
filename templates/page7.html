@@ -1,68 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 2 meta tags should come first in the head; any other head content should come *after* these tags -->
 
-    <!-- Bootstrap -->
+{% extends "layout.html" %}
+{% set active_page = "page7" %}
 
-    <!-- Latest compiled and minified bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+{% block title %}Page 7{% endblock %}
 
-  <link rel="stylesheet" href="style.css">
-  <title>Uranus</title>
-  
-  </head>
-  <body>
-    <!--nav bar-->
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">Our Solar System</a>
-        </div>
-        <ul class="nav navbar-nav">
-			<li><a href="index.html">The Sun</a></li>
-			<li><a href="page1.html">Mercury</a></li>
-			<li><a href="page2.html">Venus</a></li>
-			<li><a href="page3.html">Earth</a></li>
-			<li><a href ="page4.html">Mars</a></li> 
-			<li><a href ="page5.html">Jupiter</a></li>
-			<li><a href ="page6.html">Saturn</a></li>
-			<li class = "active"><a href ="page7.html">Uranus</a></li>
-			<li><a href="page8.html">Neptune</a></li>
-			<li><a href="page9.html">Pluto</a></li>
-        </ul>
-      </div>
-    </nav>
-    
-    <!--page content-->
-    <h1 class= "header">Uranus</h1>
-	
-	<P>
-	Uranus, the only planet named after a Greek god, Ouranos, the go . It has the third largest planetary radius and the fourth largest planetary mass. Its radius spans across 15,759 miles. Uranus is the 7th planet from the sun and it is classified as an Ice giant. Uranus is consisted of hydrogen and helium but it's classified as an ice giant because it's mostly made up of water, ammonia, and methane. The methane gives Uranus its blue tint. It also has the coldest atmosphere. Uranus is on a tilted axis, it also has 27 moons. 1 earth day on Uranus is 17 hours and 14 minutes, making 1 year equal to 84 earth years. 
-	</p>
-	<img src= "uranus.gif" id="uimg"  alt="no">
-    
-<form action="/action_page.php">
-  <p class= "YW">Your Weight:</p><br>
-  <input type="text" id="inputU">
-  <br>
-  <button type="button" id="U">Calculate!</button> <br>
-  <p id= "UW" class= "YW">Your Weight on Uranus:
-  
-  </p>
-  <p id= "outputU"> </p>
-  <br>
-</form> 
+{% block content %}
+<!--page content-->
+    <h1>Uranus</h1>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	  <script src="spaceScript.js"></script>
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-  </body>
-</html>
+{% endblock %}
